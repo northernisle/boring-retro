@@ -3,6 +3,10 @@
   "rules": {
     // Allow unescaped special characters
     "react/no-unescaped-entities": 0,
+    // Allow `dispayName` omission with forwardRef, memo etc.
+    "react/display-name": 0,
+    // Allow anonymous arrow functions to be exported
+    "import/no-anonymous-default-export": [2, { "allowArrowFunction": true }],
     // Enforce proper import order
     "import/order": [
       2,
